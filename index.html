@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Usaha Buku Fatih</title>
+<link rel ="stylesheet" href ="style.css"/>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="produk.html">Produk</a></li>
+    <li><a href="Bedah Buku Artikel.html">Bedah Buku Artikel</a></li>
+    <li><a href="Testimoni.html">Testimoni</a></li>
+    <li><a href="Tampil Testimoni.html">Tampil Testimoni</a></li>
+    <li><a href="Vidio Produk Event.html">Video Produk Event</a></li>
+    <li><a href="Kontak.html">Kontak</a></li>
+      
+  </ul>
+</nav>
+</head>
+<body>
+ <section class="daftar-produk">
+  <div class="produk">
+    <img src="Image/Toko Buku Fatih.png" alt="Toko Buku Fatih">
+  </div>
+</section>
+
+  <div class="container">
+  <div class="stat-card">
+    <span class="counter" data-target="10000">0</span>
+    <span class="label">Data Pengunjung</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="8500">0</span>
+    <span class="label">Pengunjung Puas</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="1500">0</span>
+    <span class="label">Buku Favorit</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="5000">0</span>
+    <span class="label">Pengunjung Terbaik</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="9999">0</span>
+    <span class="label">Rating Positif</span>
+  </div>
+</div>
+<script>
+  const counters = document.querySelectorAll('.counter');
+  
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      
+      // Mengatur durasi animasi agar halus
+      const speed = 150; 
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+</script>
+
+
+
+<h1>Selamat Datang di Usaha Buku Fatih</h1>
+<h2>“Temukan berbagai buku pilihan di toko kami.”</h2>
+
+<p>
+Website ini berisi informasi lengkap mengenai berbagai produk buku pilihan, ulasan atau bedah buku, serta testimoni pelanggan yang telah mempercayai Usaha Buku Fatih sebagai tempat mendapatkan bacaan yang berkualitas dan bernilai edukatif.
+</p>
+
+<p>
+Website buku sebaiknya memiliki desain yang bersih, rapi, dan menenangkan agar pengunjung merasa nyaman saat membaca dan menjelajahi koleksi. Penggunaan tipografi yang mudah dibaca sangat penting karena audiens utama adalah pembaca aktif yang menghargai kenyamanan visual dan keteraturan informasi.
+</p>
+
+<p>
+Dari segi warna, palet hangat seperti krem, kayu, atau biru tua digunakan untuk menciptakan kesan intelektual dan nyaman. Navigasi juga dirancang sederhana agar pengunjung dapat menemukan buku berdasarkan genre, penulis, buku terlaris, maupun rilisan terbaru dengan mudah.
+</p>
+
+<h1>Mengenal Ukuran Buku by Fatih</h1> 
+<p> Ukuran Buku merupakan sebuah inisiatif yang berfokus pada kurasi literatur serta apresiasi terhadap buku sebagai sumber pengetahuan dan karya seni. Di bawah arahan Fatih, platform ini berkembang menjadi ruang bagi para pecinta buku yang mencari bacaan berkualitas, bermakna, dan memiliki nilai intelektual yang kuat. </p>
+<p> Berangkat dari kegelisahan terhadap maraknya informasi instan dan budaya membaca yang semakin dangkal, Ukuran Buku by Fatih hadir sebagai oase refleksi. Platform ini tidak sekadar menyajikan daftar rekomendasi, tetapi berupaya mengajak pembaca untuk kembali memahami esensi membaca sebagai proses berpikir, merenung, dan memperluas cakrawala. Setiap buku yang dipilih melalui proses seleksi yang ketat—menimbang bobot gagasan, kedalaman analisis, kualitas penulisan, serta relevansinya dengan dinamika zaman. </p> 
+<p> Fokus kurasinya mencakup berbagai bidang seperti filsafat, sejarah, sastra klasik dan modern, kajian sosial-politik, psikologi, hingga pengembangan diri. Tidak jarang pula Ukuran Buku by Fatih menyoroti karya-karya yang jarang dibahas namun memiliki pengaruh besar dalam perkembangan pemikiran. Dengan pendekatan yang sistematis dan argumentatif, setiap ulasan dirancang untuk membantu pembaca memahami konteks historis, latar intelektual penulis, serta benang merah ide yang membangun sebuah karya. </p> 
+<p> Lebih dari sekadar platform ulasan, Ukuran Buku by Fatih juga berfungsi sebagai ruang dialog. Diskusi, refleksi tematik, serta rekomendasi berbasis isu tertentu menjadi bagian dari upaya membangun komunitas pembaca yang kritis dan terbuka. Di sini, membaca dipandang sebagai aktivitas kolektif yang dapat memperkaya perspektif melalui pertukaran gagasan. </p> 
+<p> Komitmen terhadap kualitas menjadi fondasi utama. Integritas dalam merekomendasikan buku, konsistensi dalam analisis, serta keberanian menyampaikan pandangan yang jujur adalah prinsip yang dijaga. Dengan demikian, Ukuran Buku by Fatih tidak hanya membantu pembaca menemukan buku yang baik, tetapi juga mendorong lahirnya kebiasaan membaca yang lebih sadar, mendalam, dan berkelanjutan. </p> 
+<p> Pada akhirnya, Ukuran Buku by Fatih merupakan wujud dedikasi terhadap literasi sebagai pilar peradaban. Ia hadir untuk mengingatkan bahwa buku bukan sekadar benda cetak, melainkan jendela pemikiran yang mampu membentuk cara pandang, memperhalus rasa, dan memperkaya kehidupan intelektual setiap pembacanya. </p>
+
+<h1>Jenis-Jenis Buku by Fatih</h1> 
+<p> Buku fiksi merupakan jenis buku yang isinya berasal dari imajinasi penulis, meskipun sering kali terinspirasi dari peristiwa nyata. Jenis buku ini meliputi novel, novel grafis dan komik, antologi cerpen, puisi atau sajak, fiksi sejarah, serta genre fantasi dan fiksi ilmiah yang mampu mengasah imajinasi pembaca sekaligus memperkaya sudut pandang terhadap kehidupan. </p> 
+<p> Selain fiksi, terdapat pula buku nonfiksi yang berfokus pada fakta, data, dan realitas. Buku nonfiksi mencakup biografi, autobiografi, buku sejarah, esai, karya ilmiah, buku motivasi, hingga buku pengembangan diri. Jenis ini bertujuan memberikan pengetahuan yang sistematis, memperluas wawasan, serta membantu pembaca memahami dunia secara lebih rasional dan terstruktur. </p> 
+<p> Buku referensi juga menjadi kategori penting. Ensiklopedia, kamus, atlas, dan buku panduan termasuk dalam jenis ini. Buku referensi dirancang untuk memberikan informasi spesifik yang dapat dirujuk sewaktu-waktu. Kehadirannya sangat membantu dalam proses belajar, penelitian, maupun pengembangan kompetensi profesional. </p> 
+<p> Selanjutnya, ada buku pendidikan yang digunakan sebagai sarana pembelajaran formal maupun informal. Buku pelajaran sekolah, modul perkuliahan, hingga buku latihan soal termasuk dalam kategori ini. Buku pendidikan disusun secara sistematis agar pembaca dapat memahami materi secara bertahap sesuai dengan tingkat kemampuan. </p> 
+<p> Tidak kalah penting adalah buku anak dan remaja yang dirancang sesuai dengan tahap perkembangan usia. Buku jenis ini biasanya dilengkapi ilustrasi menarik, bahasa yang sederhana, serta pesan moral yang membangun karakter. Melalui buku anak dan remaja, minat baca dapat ditumbuhkan sejak dini. </p> 
+<p> Dengan memahami berbagai jenis buku tersebut, pembaca dapat lebih mudah menentukan bacaan yang sesuai dengan kebutuhan, minat, dan tujuan mereka. Melalui kurasi dan rekomendasi yang tepat, diharapkan setiap pembaca dapat menemukan buku yang tidak hanya menghibur, tetapi juga memberi nilai pengetahuan dan inspirasi dalam kehidupan sehari-hari. </p>
+
+<h1>Tips Merawat Buku by Fatih</h1>
+<p>
+Merawat buku dengan baik sangat penting untuk menjaga kualitas dan memperpanjang usia simpan. Bersihkan debu secara rutin menggunakan kain lembut, hapus noda pensil dengan hati-hati, serta sesekali buka dan balik halaman buku agar kertas tidak lembap dan tetap terjaga kondisinya.
+</p>
+
+<h1>Informasi Mencari Buku Terbaik</h1>
+<p>
+Untuk menemukan buku terbaik, pembaca dapat menelusuri karya lain dari penulis yang sama atau memilih penerbit yang memiliki standar kurasi tinggi. Beberapa penerbit ternama di Indonesia dikenal konsisten menghadirkan buku berkualitas baik dari segi isi maupun penyajiannya.
+</p>
+
+<h1>Lokasi Toko Kami</h1>
+<p>
+Toko kami berlokasi di kawasan Jalan Braga dan menjadi tempat yang cocok bagi para pecinta buku yang menginginkan suasana tenang. Meski berada di area yang tidak terlalu mencolok, toko ini menawarkan kenyamanan serta koleksi buku yang jarang ditemukan di toko buku umum.
+</p>
+
+<h1>Kontak Admin Toko</h1>
+<p>
+Untuk informasi lebih lanjut, pemesanan, atau pertanyaan seputar produk buku, Anda dapat menghubungi admin toko melalui WhatsApp di nomor <strong>0813-3533-3233</strong>.
+</p>
+
+</body>
+</html>

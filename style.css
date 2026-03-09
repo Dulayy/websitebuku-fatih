@@ -1,0 +1,338 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #fff1e6 0%,   /* peach lembut */
+    #e6dbff 30%,  /* lavender pastel */
+    #ffffff 60%,  /* putih susu */
+    #e6dbff 85%,  /* lavender pastel */
+    #fff1e6 100%  /* peach lembut */
+  );
+  font-family: "Poppins", sans-serif;
+  color: #3a3a3a;
+  margin: 20px;
+  min-height: 100vh;
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+
+
+/* ================= PRODUK ================= */
+.daftar-produk {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.produk {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produk:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.produk img {
+  width: 50%;        /* Lebih kecil dari 60% */
+  max-width: 400px;  /* Batas maksimal diperkecil */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.produk h2,
+.produk h3 {
+  color: #2c3e50;
+}
+
+.harga {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.deskripsi {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================= TEKS ================= */
+h1, h2, p {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+h1 {
+  background-color: rgba(72, 133, 122, 0.95); /* teal lembut */
+  color: #ffffff;
+  font-size: 30px;
+}
+
+
+
+
+h2 {
+  color: #89c2ff;
+  font-size: 26px;
+}
+
+p {
+  color: #0e0f0f;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  gap: 20px;
+  font-size: 25px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  h1, h2, p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar ul {
+    font-size: 18px;
+    gap: 12px;
+  }
+}
+
+/* ================= ANIMASI ================= */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.artikel {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+}
+
+.artikel h2 {
+  color: #034694; /* lebih gelap agar terlihat di background putih */
+}
+
+.artikel p {
+  color: #222; /* teks artikel terlihat pada background putih */
+}
+
+.artikel .penulis {
+  font-style: italic;
+  color: #444; /* sedikit lebih gelap untuk keterbacaan */
+  margin-bottom: 20px;
+}
+
+.artikel .sampul {
+  width: 180px;
+  float: right;
+  margin: 0 0 20px 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.artikel blockquote {
+  font-style: italic;
+  padding-left: 20px;
+  margin: 20px 0;
+  border-left: 4px solid var(--blue-700);
+  color: #234b6b; /* blue-gray tone untuk teks blockquote */
+  background-color: #f1f8ff;
+}
+
+.btn-kembali {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 16px;
+  background: linear-gradient(90deg, var(--blue-700), var(--blue-500));
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 6px 16px var(--soft-shadow);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.btn-kembali:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px var(--soft-shadow);
+  background: linear-gradient(90deg, var(--blue-900), var(--blue-400));
+}
+
+.formulir {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(18, 17, 17, 0.95);
+  color: #fcf7f7; 
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  font-family: "Poppins", sans-serif;
+}
+.formulir h2,
+.formulir label {
+  color: #080808; /* judul/label berwarna biru gelap */
+}
+.formulir input,
+.formulir textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f9f6f6;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #0a0a0a;
+  background: #f7f3f3;
+}
+.formulir textarea::placeholder {
+  color: #777; /* placeholder lebih gelap supaya terlihat */
+}
+.formulir {
+max-width: 600px;
+margin: auto;
+padding: 20px;
+background-color: #fafafa;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+            
+form label {
+display: block;
+margin-top: 10px;
+font-weight: bold;
+            
+}
+            
+form input,
+form select,
+form textarea {
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+margin-bottom: 15px;
+border-radius: 5px;
+border: 1px solid #ccc;
+            
+}
+            
+form button {
+background-color: #3498db;
+color: rgb(248, 245, 245);
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+            
+form button:hover {
+background-color: #2980b9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Agar responsif di HP */
+    gap: 20px;
+    padding: 50px;
+    background-color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .stat-card {
+    background: rgb(255, 254, 254);
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .counter {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+
+  .label {
+    color: #7f8c8d;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .card-buku {
+            background-color: white;
+            width: 100%;
+            max-width: 560px; /* Menyesuaikan ukuran standar video Youtube */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            width: 100%;
+            max-width: 500px; /* Tentukan lebar maksimal */
+            margin-left: auto;
+            margin-right: auto;
+            display: block; /* Memastikan elemen dianggap sebagai blok */
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Rasio 16:9 */
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .konten {
+            padding: 20px;
+        }
+
+        .judul-buku {
+            font-size: 24px;
+            color: #333;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+
+        .harga-buku {
+            font-size: 20px;
+            color: #e67e22; /* Warna orange agar menonjol */
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .deskripsi {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
